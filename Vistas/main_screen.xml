@@ -5,19 +5,30 @@
     android:orientation="vertical"
     android:gravity="center_horizontal">
 
-    <!--  Sample Dashboard screen with Two buttons -->
-    <!--  Button to view all products screen -->
-    <Button android:id="@+id/btnViewProducts"
-        android:layout_width="fill_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View Products"
-        android:layout_marginTop="25dip"/>
+        android:text="Nombre Usuario"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etUser"/>
 
-    <!--  Button to create a new product screen -->
-    <Button android:id="@+id/btnCreateProduct"
-        android:layout_width="fill_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add New Products"
-        android:layout_marginTop="25dip"/>
+        android:text="Contraseña"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPass"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAceptar"
+        android:text="Aceptar"
+        android:layout_gravity="center"
+        android:onClick="btnAceptar"/>
 
 </LinearLayout>
